@@ -1,3 +1,67 @@
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 0px;
+  padding: 0px;
+}
+
+div.relative {
+  position: relative;
+  left: 0px;
+  color: white;
+  border: 0px solid #73AD21;
+}
+
+div.footrelative {
+  left: 0px;
+  color: white;
+  font-weight: bold;
+  color: white;
+  padding: 0px 0px;
+  text-align: left;
+  text-decoration: none;
+}
+
+section.navsection
+{
+  visibility: visible;
+}
+
+a.name:link, a:visited {
+  background-color: #282828;
+  font-weight: bold;
+  font-size: 30px;
+  font color: #ffffff;
+  padding: 0px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.menu:link, a:visited {
+  background-color: #282828;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.bottom:link, a:visited {
+  font-weight: bold;
+  color: white;
+  padding: 0px 0px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+a:hover{
+  background-color: 
+}
+
 #about {
   text-align: center;
   padding: 40px;
@@ -44,8 +108,7 @@ section {
 .content {
   position: fixed;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
+  color: #ffffff;
   width: 100%;
   padding: 20px;
 }
@@ -67,24 +130,10 @@ section {
 
 .navbar-brand { color: #FFFFFF;}
 
-a:link {
-  color: red;
-}
-
-/* visited link */
-a:visited {
-  color: green;
-}
-
-/* mouse over link */
 a:hover {
   color: hotpink;
 }
 
-/* selected link */
-a:active {
-  color: blue;
-}
 
 h1 {
     color: white;
@@ -128,9 +177,6 @@ span {
   font-size: 10px;
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
-}
 
 .collapsible:after {
   content: '\002B';
@@ -149,5 +195,56 @@ span {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+ }
+
+
+ body {
+  background-color: lightblue;
+}
+.col-sm-1 {
+  border: 1px #ccc solid;
+  background-color: yellow;
+  text-align: center;
+}
+
+.col-sm-4 {
+  border: 1px #ccc solid;
+  background-color: blue;
+  text-align: center;
+  color: white;
+}
+
+/*.col-sm-6 {
+  border: 1px green solid;
+  background-color: blue;
+  text-align: center;
+  color: white;
+}
+*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
 }
